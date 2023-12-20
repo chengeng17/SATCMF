@@ -10,7 +10,7 @@
 
 #### I would like to express my sincere gratitude to Dexiong Chen et al.for their exceptional work which has significantly contributed to the development of my project. The code used in this project is inspired by their innovative approach to graph representation learning, as presented in their paper "Structure-Aware Transformer for Graph Representation Learning," which was published in the proceedings of ICML 2022. Please find the original code and research paper at the following link:
 >Dexiong Chen*, Leslie O'Bray*, and Karsten Borgwardt.
-[Structure-Aware Transformer for Graph Representation Learning][1](https://arxiv.org/abs/2202.03036). ICML 2022.
+[Structure-Aware Transformer for Graph Representation Learning](https://arxiv.org/abs/2202.03036). ICML 2022.
 <br/>*Equal contribution
 
 ## Install Dependencies
