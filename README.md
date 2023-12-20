@@ -6,7 +6,7 @@
 
 ## Framework
 
-![Alt Text](./dataset/model_framework.png)
+![Alt Text](model_framework.png)
 
 #### I would like to express my sincere gratitude to Dexiong Chen et al.for their exceptional work which has significantly contributed to the development of my project. The code used in this project is inspired by their innovative approach to graph representation learning, as presented in their paper "Structure-Aware Transformer for Graph Representation Learning," which was published in the proceedings of ICML 2022. Please find the original code and research paper at the following link:
 >Dexiong Chen*, Leslie O'Bray*, and Karsten Borgwardt.
@@ -102,7 +102,7 @@ After processing the data, you can run the interpretability analysis with the fo
 ```
 python interpretation.py --graph-idx <graph_index> --outpath <output_path> --dataset-path <dataset_path> --model-path <model_path>
 ```
- ``Parameters:
+Parameters:
 - `--graph-idx <graph_index>`: The index of the graph to interpret. Replace `<graph_index>` with the index of the graph you want to analyze.
 - `--outpath <output_path>`: The output path for the visualization. Replace `<output_path>` with the path where you want to save the visualization.
 - `--dataset-path <dataset_path>`: The path to the dataset file. Replace `<dataset_path>` with the actual path to your dataset.
