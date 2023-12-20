@@ -16,7 +16,7 @@
 ## Install Dependencies
 SATCMF needs conda environment. After installing [conda](https://www.anaconda.com/),
 
-1. `git clone https://github.com/chemprop/chemprop.git`
+1. `git clone https://github.com/chengeng17/SATCMF/SATCMF.git`
 2. `cd SATCMF`
 3. `conda env create -f environment.yml`
 4. `conda activate SATCMF`
@@ -65,7 +65,7 @@ SMILES,Metal,LogK1
 O=C(O)CN1CCN(CC(=O)O)CCN(CC(=O)O)CCN(CC(=O)O)CC1,Lu+++,250
 ```
 #### 2. Data Processing
-Run the data processing script to prepare your test data:` 
+Run the data processing script to prepare your test data:
 ```
 python test/data_process.py --data_path <input_csv_path> --save_dir <processed_data_dir>
 ```
@@ -74,7 +74,7 @@ Parameters:
 - `--save_dir <processed_data_dir>`: Directory where the processed data will be saved. Replace `<processed_data_dir>` with the path where you want to save the processed data.
 
 #### 3. Running the Test
-After processing the data, you can run the test with the following command:`` 
+After processing the data, you can run the test with the following command:
 ```
 python test/test.py --test_data_path <processed_data_path> --model_path <model_file_path> --output_path <predictions_csv_path>
 ```
