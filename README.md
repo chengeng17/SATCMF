@@ -1,6 +1,6 @@
-# Structure-Aware Transformer Combined with Molecular Fingerprints (SATCMF): A Novel Deep Learning Framework for Predicting Stability of Chelating Agents in Nuclear Medicine
+# Integrating Prior Chemical Knowledge into the Graph Transformer Network to Predict the Stability Constants of Chelating Agents with Radioactive Isotopes
 
-#### The code originates from the article mentioned above. Herein, we provide the complete training code and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes. Subsequent to the article's acceptance for publication, we will make the training dataset available.
+#### The code originates from the article mentioned above. Herein, we provide the complete training code, data and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes.
 
 ####  SATCMF is specifically designed to predict the stability of chelating agents in nuclear medicine.
 
@@ -8,10 +8,6 @@
 
 ![Alt Text](modeL_framenetwork.png)
 
-#### I would like to express my sincere gratitude to Dexiong Chen et al.for their exceptional work which has significantly contributed to the development of my project. The code used in this project is inspired by their innovative approach to graph representation learning, as presented in their paper "Structure-Aware Transformer for Graph Representation Learning," which was published in the proceedings of ICML 2022. Please find the original code and research paper at the following link:
->Dexiong Chen*, Leslie O'Bray*, and Karsten Borgwardt.
-[Structure-Aware Transformer for Graph Representation Learning](https://arxiv.org/abs/2202.03036). ICML 2022.
-<br/>*Equal contribution
 
 ## Install Dependencies
 SATCMF needs conda environment. After installing [conda](https://www.anaconda.com/),
@@ -133,3 +129,8 @@ The Jupyter notebooks include:
 - Comparative studies with baseline models 
 
 For a comprehensive understanding of the results and methodologies used, please explore the relevant folders and notebooks.
+
+#### I would like to express my sincere gratitude to Dexiong Chen et al.for their exceptional work which has significantly contributed to the development of my project. The code used in this project is inspired by their innovative approach to graph representation learning, as presented in their paper "Structure-Aware Transformer for Graph Representation Learning," which was published in the proceedings of ICML 2022. Please find the original code and research paper at the following link:
+>Dexiong Chen*, Leslie O'Bray*, and Karsten Borgwardt.
+[Structure-Aware Transformer for Graph Representation Learning](https://arxiv.org/abs/2202.03036). ICML 2022.
+<br/>*Equal contribution
