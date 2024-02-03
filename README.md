@@ -47,7 +47,7 @@ Here is the explanation of each parameter:
 
 To train a model with the provided script, execute the following command in your terminal. For example:
 ```
-python train.py --data_path "./dataset/10_fold_cv/fold10" --outdir "./SATCMF_train_result" --gnn_type "gcn" --k_hop "3" --use-fp-density
+python train.py --data_path "./dataset/10_fold_cv/fold10" --outdir "./SATCMF_train_result" --gnn_type "gcn" --k_hop "3" --use_fp_density_morgan
 ```
 
 ### Test
@@ -109,7 +109,7 @@ For example:
 ```
 python interpretation.py --visu --graph-idx 0 --outpath "./interpretation_analysis" --dataset-path "./interpretation_analysis/data_interpretation_DOTA_random_edge.pt" --model-path "./interpretation_analysis/SATCMF_gcn_K=3_model.pth"
 ```
-In this example, we use DOTA for interpretability analysis. The attention score distribution graph will be saved in the specified `interpretation_analysis` directory.
+In this example, we use DOTA and Lu3+ for interpretability analysis. The attention score distribution graph will be saved in the specified `interpretation_analysis` directory.
 
 ### GNN Baseline Models
 You can find the Graph Neural Network (GNN) baseline models in the `baseline_gnn_models` directory. 
