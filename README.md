@@ -2,7 +2,7 @@
 
 #### The code originates from the article mentioned above. Herein, we provide the complete training code, data and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes.
 
-####  SATCMF is specifically designed to predict the stability of chelating agents in nuclear medicine.
+####  SATCMF is specifically designed to predict the stability constants of chelating agents with radioactive isotopes.
 
 ## Framework
 
