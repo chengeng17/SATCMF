@@ -47,7 +47,7 @@ Here is the explanation of each parameter:
 
 To train a model with the provided script, execute the following command in your terminal. For example:
 ```
-python train.py --data_path "./dataset/10_fold_cv/fold10" --outdir "./SATCMF_train_result" --gnn_type "gcn" --k_hop "3" --use-fp-density-morgan
+python train.py --data_path "./dataset/10_fold_cv/fold10" --outdir "./SATCMF_train_result" --gnn_type "gcn" --k_hop "3" --use-fp-density
 ```
 
 ### Test
