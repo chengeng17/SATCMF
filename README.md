@@ -1,18 +1,22 @@
-# Integrating Prior Chemical Knowledge into the Graph Transformer Network to Predict the Stability Constants of Chelating Agents with Radioactive Isotopes
+# Structure-Aware Transformer Combined with Molecular Fingerprints (SATCMF): A Novel Deep Learning Framework for Predicting Stability of Chelating Agents in Nuclear Medicine
 
-#### The code originates from the article mentioned above. Herein, we provide the complete training code, data and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes.
+#### The code originates from the article mentioned above. Herein, we provide the complete training code and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes. Subsequent to the article's acceptance for publication, we will make the training dataset available.
 
-####  SATCMF is specifically designed to predict the stability constants of chelating agents with radioactive isotopes.
+####  SATCMF is specifically designed to predict the stability of chelating agents in nuclear medicine.
 
 ## Framework
 
 ![Alt Text](modeL_framenetwork.png)
 
+#### I would like to express my sincere gratitude to Dexiong Chen et al.for their exceptional work which has significantly contributed to the development of my project. The code used in this project is inspired by their innovative approach to graph representation learning, as presented in their paper "Structure-Aware Transformer for Graph Representation Learning," which was published in the proceedings of ICML 2022. Please find the original code and research paper at the following link:
+>Dexiong Chen*, Leslie O'Bray*, and Karsten Borgwardt.
+[Structure-Aware Transformer for Graph Representation Learning](https://arxiv.org/abs/2202.03036). ICML 2022.
+<br/>*Equal contribution
 
 ## Install Dependencies
 SATCMF needs conda environment. After installing [conda](https://www.anaconda.com/),
 
-1. `git clone https://github.com/chengeng17/SATCMF/SATCMF.git`
+1. `git clone https://github.com/chemprop/chemprop.git`
 2. `cd SATCMF`
 3. `conda env create -f environment.yml`
 4. `conda activate SATCMF`
@@ -61,7 +65,7 @@ SMILES,Metal,LogK1
 O=C(O)CN1CCN(CC(=O)O)CCN(CC(=O)O)CCN(CC(=O)O)CC1,Lu+++,250
 ```
 #### 2. Data Processing
-Run the data processing script to prepare your test data:
+Run the data processing script to prepare your test data:` 
 ```
 python test/data_process.py --data_path <input_csv_path> --save_dir <processed_data_dir>
 ```
@@ -70,7 +74,7 @@ Parameters:
 - `--save_dir <processed_data_dir>`: Directory where the processed data will be saved. Replace `<processed_data_dir>` with the path where you want to save the processed data.
 
 #### 3. Running the Test
-After processing the data, you can run the test with the following command:
+After processing the data, you can run the test with the following command:`` 
 ```
 python test/test.py --test_data_path <processed_data_path> --model_path <model_file_path> --output_path <predictions_csv_path>
 ```
@@ -130,7 +134,3 @@ The Jupyter notebooks include:
 
 For a comprehensive understanding of the results and methodologies used, please explore the relevant folders and notebooks.
 
-#### I would like to express my sincere gratitude to Dexiong Chen et al.for their exceptional work which has significantly contributed to the development of my project. The code used in this project is inspired by their innovative approach to graph representation learning, as presented in their paper "Structure-Aware Transformer for Graph Representation Learning," which was published in the proceedings of ICML 2022. Please find the original code and research paper at the following link:
->Dexiong Chen*, Leslie O'Bray*, and Karsten Borgwardt.
-[Structure-Aware Transformer for Graph Representation Learning](https://arxiv.org/abs/2202.03036). ICML 2022.
-<br/>*Equal contribution
