@@ -11,7 +11,7 @@
 ## Install Dependencies
 SATCMF needs conda environment. After installing [conda](https://www.anaconda.com/),
 
-1. `git clone https://github.com/chemprop/chemprop.git`
+1. `git clone https://github.com/chengeng17/SATCMF.git`
 2. `cd SATCMF`
 3. `conda env create -f environment.yml`
 4. `conda activate SATCMF`
