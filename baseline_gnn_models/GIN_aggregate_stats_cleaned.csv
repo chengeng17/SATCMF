@@ -1,0 +1,2 @@
+label,train_rmse,train_mae,train_r2,train_pcc,test_rmse,test_mae,test_r2,test_pcc
+GIN,1.252 ± 0.129,0.883 ± 0.096,0.957 ± 0.009,0.978 ± 0.005,1.736 ± 0.392,0.962 ± 0.187,0.915 ± 0.037,0.958 ± 0.019

@@ -1,0 +1,2 @@
+label,train_rmse,train_mae,train_r2,train_pcc,test_rmse,test_mae,test_r2,test_pcc
+MPNN,1.130 ± 0.145,0.787 ± 0.095,0.965 ± 0.009,0.982 ± 0.005,1.590 ± 0.302,0.867 ± 0.114,0.930 ± 0.024,0.965 ± 0.012

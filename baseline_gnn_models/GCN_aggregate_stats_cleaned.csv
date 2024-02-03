@@ -1,0 +1,2 @@
+label,train_rmse,train_mae,train_r2,train_pcc,test_rmse,test_mae,test_r2,test_pcc
+GCN,1.390 ± 0.133,0.980 ± 0.107,0.947 ± 0.010,0.973 ± 0.005,1.794 ± 0.325,1.018 ± 0.132,0.911 ± 0.029,0.956 ± 0.014
