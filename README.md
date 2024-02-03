@@ -2,7 +2,7 @@
 
 #### The code originates from the article mentioned above. Here, we provide the complete training data, code, and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes. 
 
-####  SATCMF is specifically designed to predict the stability constants of chelating agents with radioactive isotopes.
+####  Structure-Aware Transformer combined with Molecular Fingerprint (SATCMF) is specifically designed to predict the stability constants of chelating agents with radioactive isotopes.
 
 ## Framework
 
