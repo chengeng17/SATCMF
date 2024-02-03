@@ -1,0 +1,58 @@
+seed: 158
+dataset: Metal
+num_heads: 8
+num_layers: 6
+dim_hidden: 64
+dropout: 0.2
+epochs: 2000
+lr: 0.001
+weight_decay: 1e-05
+batch_size: 128
+abs_pe: None
+abs_pe_dim: 20
+outdir: /mnt/USR_DATA/ChenGeng/Project/SATCMF/train_reslut158/fold10/Metal/seed158/edge_attr/khopgnn_gcn_3_0.2_50_0.001_1e-05_6_8_64_cls_BN_2023-12-04_16-44-03_use_fp_density_morgan
+warmup: 50
+layer_norm: False
+use_edge_attr: True
+use_fp_density_morgan: True
+edge_dim: 32
+gnn_type: gcn
+k_hop: 3
+global_pool: cls
+se: khopgnn
+early_stop: 50
+cuda_device: 1
+data_path: /mnt/USR_DATA/ChenGeng/Project/SATCMF/Dataset/10_fold_cv/fold10
+n_tags: 145
+num_edge_features: 15
+cross_val: None
+use_cuda: True
+batch_norm: True
+save_logs: True
+GraphTransformer(
+  (embedding): Linear(in_features=145, out_features=64, bias=False)
+  (embedding_edge): Linear(in_features=15, out_features=32, bias=False)
+  (encoder): GraphTransformerEncoder(
+    (layers): ModuleList(
+      (0-5): 6 x TransformerEncoderLayer(
+        (self_attn): Attention()
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (norm1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (norm2): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout1): Dropout(p=0.2, inplace=False)
+        (dropout2): Dropout(p=0.2, inplace=False)
+      )
+    )
+  )
+  (fc_fp_density_morgan): Linear(in_features=2048, out_features=64, bias=True)
+  (fc_output): Linear(in_features=64, out_features=64, bias=True)
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=64, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=64, out_features=32, bias=True)
+    (3): ReLU(inplace=True)
+    (4): Linear(in_features=32, out_features=1, bias=True)
+  )
+)
