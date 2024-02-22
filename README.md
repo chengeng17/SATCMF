@@ -1,4 +1,4 @@
-# Integrating Prior Chemical Knowledge into the Graph Transformer Network to Predict the Stability Constants of Chelating Agents with Radioactive Isotopes
+# Integrating Prior Chemical Knowledge into the Graph Transformer Network to Predict the Stability Constants of Chelating Agents and Radioactive Isotopes
 
 #### The code originates from the article mentioned above. Here, we provide the complete training data, code, and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes. 
 
