@@ -1,8 +1,8 @@
-# Integrating Prior Chemical Knowledge into the Graph Transformer Network to Predict the Stability Constants of Chelating Agents and Radioactive Isotopes
+# Integrating Prior Chemical Knowledge into the Graph Transformer Network to Predict the Stability Constants of Chelating Agents and Metal Ions
 
 #### The code originates from the article mentioned above. Here, we provide the complete training data, code, and results, which include various Graph Neural Network (GNN) baseline models, ablation study analyses, and interpretability analysis processes. 
 
-####  Structure-Aware Transformer combined with Molecular Fingerprint (SATCMF) is specifically designed to predict the stability constants of chelating agents and radioactive isotopes.
+####  Structure-Aware Transformer combined with Molecular Fingerprint (SATCMF) is specifically designed to predict the stability constants of chelating agents and Metal Ions.
 
 ## Framework
 
